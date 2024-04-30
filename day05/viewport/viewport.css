@@ -1,0 +1,19 @@
+.box{
+    /* vw = viewport width */
+    /* 사용자 브라우저 넓이의 퍼센트 */
+    width: 80vw;
+    /* vw = viewport height */
+    /* 사용자 브라우저 높이의 퍼센트 */
+    height: 80vh;
+    background-color: skyblue;
+    /* 모든(all) 변화가 0.5s 걸리게한다 */
+    transition: 0.5s;
+}
+
+.box:hover{
+    /* opacity: 0.5; */
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+}
+

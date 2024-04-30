@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+.card_container{
+    display: flex;
+    gap: 20px;
+}
+.card{
+    width: 280px;
+    height: 380px;
+    border-radius: 12px;
+    background-size: cover;
+    filter: brightness(1.08);
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.category>span{
+    font-family: 'Pretendard-Regular';
+    color: white;
+    font-size: 14px;
+    border-bottom: 1px solid; 
+    padding-bottom: 2px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.title > span{
+    font-family: 'Pretendard-Regular';
+    color: white;
+    font-size: 20px;
+}
+.text > span{
+    font-family: 'Pretendard-Regular';
+    color: white;
+    font-size: 15px;
+}
+.c1{
+    background-image: url('../travel/제주도.jpg');
+}
+.c2{
+    background-image: url('../travel/서울.jpg');
+}
+.c3{
+    background-image: url('../travel/경주.jpg');
+}
