@@ -1,0 +1,124 @@
+
+.container{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+.page{
+    scroll-snap-align: start;
+}
+.first{ 
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid #000;
+    
+    
+}
+.first__video-box{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.first__text-box{
+    
+    gap: 20px;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.first__text-box--t1{
+    
+    z-index: 2;
+    font-size: 20px;
+}
+.first__text-box--t2{
+    z-index: 2;
+    font-size: 20px;
+}
+.first__text-box--t3{
+    z-index: 2;
+    font-size: 35px;
+}
+.first__text-box-imgBox{
+    position: absolute;
+    top: 300px;
+    left: 650px;
+    width: 300px;
+    height: 300px;
+}
+.first__text-box-imgBox>img{
+    
+    width:80%;
+    height: 100%;
+    object-fit: cover;
+}
+.second{
+    width: 100vw;
+    height: 100vh;
+    background-color: wheat;
+}
+.second__container{
+    width: 1024px;
+    height: 100%;
+    max-width: 1024px;
+    border: 1px solid #000;
+    background-color: black;
+    margin: 0 auto;
+}
+.second__container >.second__container__imgBox0{
+    width: 800px;
+    height: 400px;
+    /* background-color: white; */
+    margin: 0 auto;
+}
+.second__container >.second__container__imgBox0>img{
+    width: 100%;
+    height: 100%;
+}
+.second__container__txtBox{
+    
+    /* background-color: gray; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.second__container__txtBox--t1{
+    font-size: 20px;
+}
+
+.second__container__txtBox--t2{
+    font-size: 70px;
+    font-weight: 900;
+}
+.second__container__txtBox--t3{
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.second__container >.second__container__imgBox1{
+    width: 542px;
+    height: 306px;
+    margin: 0 auto;
+}
+.second__container >.second__container__imgBox1>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
