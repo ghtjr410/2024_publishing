@@ -1,0 +1,230 @@
+main{
+    width: 100vw;
+    background-color: green;
+
+}
+.first{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.first>video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* height: 100%; */
+}
+.first > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 반투명 검은색 배경 */
+}
+.first >.inner{
+    position: relative;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.first >.inner >h1{
+    font: normal 120px / 1 "arial";
+    color: white;
+}
+.first>.inner>p{
+    color: grey;
+}
+.first>.inner>a{
+    font-size: 12px;
+    margin-top: 70px;
+    color: white;
+    padding: 9px 160px 9px 160px;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.first>.inner>a:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+.second{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-color: white;
+    
+}
+.second > .inner{
+    /* position: relative; */
+    max-width: 1200px;
+    border: 1px solid;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.second > .inner > h1{
+    font: bold 24px / 1 "arial";
+    color: #555;
+    margin-bottom: 50px;
+    /* border: 1px solid; */
+    
+}
+.wrap{
+    /* display: flex; */
+    gap: 10px;
+    display: grid;
+        width: fit-content;
+        grid-template-columns: repeat(4,1fr);
+}
+
+.card{
+    width: 280px;
+    height: 230px;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card > img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.card> a{
+    font: bold 16px / 1 "arial";
+    color: #555;
+}
+.card > p{
+    font: 14px / 1.4 "arial";
+    color: #777;
+}
+footer{
+    width: 100%;
+    height: 330px;
+    position: relative;
+    background-color: #333333;
+    
+}
+footer > .inner{
+    max-width: 1200px;
+    height: 100%;
+    border: 1px solid;
+    margin: 0 auto;
+    background-color: #333333;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer > .inner> .upper{
+    width: 100%;   
+    border-bottom: 1px solid #777;
+    padding-bottom: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+footer > .inner> .upper > h1{
+    font: bold 24px / 1 "arial";
+    color: #666;
+}    
+footer > .inner> .upper > ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    font: bold 15px / 1 "arial";
+    color: #666;
+}  
+footer >.inner> .lower{
+    width: 100%;
+}  
+
+footer >.inner> .lower > address{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font: 12px "arial";
+    color: #777;
+}  
+
+footer >.inner> .lower > p{
+   
+    font: 12px "arial";
+    color: #777;
+}  
+
+@media screen and (max-width:768px) {
+    .wrap{
+        
+        gap: 10px;
+        display: grid;
+            width: fit-content;
+            grid-template-columns: repeat(2,1fr);
+    }
+    .first >.inner{
+        max-width: 400px;
+        /* padding-left: 1rem; */
+    }
+    .first >.inner >h1{
+        font: normal 40px / 1 "arial";
+        color: white;
+    }
+    .first>.inner>a{
+        font-size: 12px;
+        margin-top: 70px;
+        color: white;
+        padding: 9px 50px 9px 50px;
+        border: 1px solid white;
+        transition: 0.3s;
+    }
+    .second > .inner{
+        max-width: 400px;
+    }
+    .card{
+        width: 180px;
+        height: 150px;
+        /* border: 1px solid #000; */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    footer > .inner{
+        max-width: 400px;
+        
+    }
+
+    footer > .inner> .upper > h1{
+        font-size: 20px;
+    } 
+    
+    footer > .inner> .upper > ul{
+        
+        gap: 10px;
+        font-size: 11px;
+        
+    }  
+    footer >.inner> .lower{
+        font-size: 8px;
+    } 
+}

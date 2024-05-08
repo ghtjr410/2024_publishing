@@ -1,0 +1,88 @@
+.box{
+    /* width: 800px;
+    height: 800px;
+    background-color: pink; */
+    width: 100px;
+    height: 100px;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+
+
+.container{
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    border: 1px solid #000;
+    
+}
+.ul2{
+    display: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    border-bottom: 1px solid #ddd;
+}
+.main1{
+    width: 100vw;
+    max-width:1200px;
+    height: 100vh;
+    border: 1px solid #000;
+    
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1024px) {
+    
+    .container{
+        display: grid;
+        width: fit-content;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        border: 1px solid red;
+        
+    }
+    .ul1{
+        display: none;
+    }
+    .ul2{
+        display: block;
+    }
+    
+}
+/* 모바일 버전 or 태블릿 버전 관련된 CSS */
+/* 768px 이하는 아래와 같은 CSS로 해주세요 */
+@media screen and (max-width:768px) {
+    
+    .container{
+        display: grid;
+        width: fit-content;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        border: 1px solid red;
+    }
+    .main1{
+        max-width:360px;
+    }
+    
+}
+
+/* 4*n rbyg  1024 pc*/
+/* 2*2 태블릿 768~1024 */
+/* 1*4모바일  768이하*/
+
+/* 3개 pc 햄버거 태블릿 모바일 */
+/* 1200 600 */
+
