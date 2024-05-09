@@ -1,0 +1,47 @@
+main{
+    position: absolute;
+    top: 90px;
+}
+.first{
+    
+    width: 100vw;
+    height: 75vh;
+    background-color: white;
+    
+    
+}
+.first__inner{
+    
+    width: 100%;
+    height: 65%;
+    margin: 0 auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.first__inner__imgBox>img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:500px) {
+    .first {
+        width: 100vw;
+        height: 75vh; /* 화면 크기 제한 */
+        overflow-x: auto; /* 가로 방향 스크롤 활성화 */
+        overflow-y: hidden; /* 세로 방향 스크롤 비활성화 */
+    }
+
+    .first__inner {
+        width: 100%;
+        height: 100%;
+    }
+    .first__inner__imgBox{
+        width: 400px;
+        height: 600px;
+        
+    }
+
+    
+    
+}
