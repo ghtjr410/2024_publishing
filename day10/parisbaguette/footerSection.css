@@ -81,3 +81,38 @@ footer{
     font-size: 40px;
     color: white;
 }
+
+@media screen and (max-width:500px) {
+    footer{
+        height: 800px;
+    }
+    .footer__inner{
+        width: 90%;
+    }
+    .footer__inner__itemBox{
+        height: 400px;
+        width: 100%;
+    
+        background-color: #333;
+        margin-top: 20px;
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .footer__inner__item__iconBox{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .A{
+        display: flex;
+    }
+    
+    
+    .footer__inner__menuBox{
+        display: none;
+    }
+}

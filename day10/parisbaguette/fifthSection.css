@@ -63,3 +63,34 @@ background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0));
     color: white;
     padding: 2rem;
 }
+
+@media screen and (max-width:500px) {
+    .fifth {
+        width: 100vw;
+        height: 200vh; /* 화면 크기 제한 */
+        /* background-color: aqua; */
+        
+    }
+    .fifth__inner{
+        max-width: 98%;
+        background-color: white;
+        gap: 80px;
+    }
+    .fifth__inner > h1{
+        align-self: auto;
+    }
+    .fifth__inner__container{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .fifth__inner__container__card{
+        width: 384px;
+        height: 480px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        position: relative;
+    }
+}

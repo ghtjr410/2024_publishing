@@ -52,3 +52,34 @@
 .fourth__inner__container__card__info > h6{
     font-size: 9px;
 }
+
+@media screen and (max-width:500px) {
+    .fourth {
+        width: 100vw;
+        height: 130vh; /* 화면 크기 제한 */
+        /* background-color: aqua; */
+        
+    }
+    .fourth__inner{
+        max-width: 98%;
+        background-color: white;
+        gap: 80px;
+    }
+    .fourth__inner > h1{
+        align-self: auto;
+    }
+    .fourth__inner__container{
+        gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .fourth__inner__container__card{
+        width: 360px;
+        height: 200px;
+    }
+    .fourth__inner__container__card__info > span{
+        font-size: 20px;
+    }
+    .fourth__inner__container__card__info > a{
+        display: none;
+    }
+}

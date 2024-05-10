@@ -53,3 +53,42 @@
     font-size: 20px;
     font-weight: bold;
 }
+
+@media screen and (max-width:500px) {
+    .second {
+        width: 100vw;
+        height: 75vh; /* 화면 크기 제한 */
+        
+    }
+    .second__inner{
+        max-width: 100%;
+        /* background-color: yellow; */
+    }
+    .second__inner > h1{
+        align-self: auto;
+    }
+    .second__inner__container{
+        display: grid;
+        gap: 0px;
+        width: 85%;
+        
+        grid-template-columns: repeat(4, 1fr);
+        scroll-snap-type: x mandatory; 
+        overflow-x: auto;  
+        overflow-y: none; 
+    }
+
+    .second__inner__container__card{
+        scroll-snap-align: start;
+
+        width: 355px;
+        height: 440px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .second__inner__container__card > img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+.first {
+    width: 100vw; /* 전체 화면 너비 */
+    height: 75vh; /* 전체 화면 높이의 75% */
+    overflow-x: auto; /* 가로 방향 스크롤 활성화 */
+    background-color: white;
+}
+
+.first__inner {
+    display: flex;
+    flex-direction: row; /* 가로 정렬 */
+    width: 300%; /* 가로로 3배 크기 */
+    height: 100%;
+    scroll-snap-type: x mandatory; /* 가로 스냅 설정 */
+}
+
+.first__inner__imgBox {
+    width: 33.33%; /* 각 이미지 박스가 화면의 1/3을 차지 */
+    height: 100%;
+    scroll-snap-align: start; /* 스냅 정렬: 시작 위치 */
+}
+
+.first__inner__imgBox > img {
+    width: 100%; /* 이미지가 박스에 맞게 설정 */
+    height: 100%;
+}

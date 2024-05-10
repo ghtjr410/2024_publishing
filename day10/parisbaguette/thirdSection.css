@@ -47,3 +47,37 @@
     font-size: 20px;
     font-weight: bold;
 }
+
+@media screen and (max-width:500px) {
+    .third {
+        width: 100vw;
+        height: 60vh; /* 화면 크기 제한 */
+        
+    }
+    .third__inner{
+        max-width: 100%;
+        /* background-color: green; */
+    }
+    .third__inner > h1{
+        align-self: auto;
+    }
+    .third__inner__container{
+       width: 90%;
+       
+        scroll-snap-type: x mandatory; 
+        overflow-x: auto;  
+        overflow-y: none; 
+    }
+
+    .third__inner__container__card{
+        width: 276px;
+        height: 324px;
+        
+        scroll-snap-align: start;
+
+        
+    }
+    .second__inner__container__card > img{
+        width: 100%;
+    }
+}
